@@ -1,0 +1,72 @@
+
+> aegis@1.0.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 4.2s
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 1591ms (280 modules)
+(node:7728) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ GET /api/auth/csrf 200 in 2418ms
+(node:11868) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ GET /api/auth/csrf 200 in 25ms
+[Aegis] sqlite-vec unavailable, using JS cosine fallback: TypeError: {}.resolve is not a function
+    at Module.getLoadablePath (webpack-internal:///(rsc)/./node_modules/sqlite-vec/index.mjs:46:85)
+    at openDb (webpack-internal:///(rsc)/./src/lib/db.ts:69:66)
+    at db (webpack-internal:///(rsc)/./src/lib/db.ts:123:33)
+    at getUserByEmail (webpack-internal:///(rsc)/./src/lib/db.ts:259:15)
+    at Object.authorize (webpack-internal:///(rsc)/./src/lib/auth.ts:32:83)
+    at Object.callback (webpack-internal:///(rsc)/./node_modules/next-auth/core/routes/callback.js:328:29)
+    at AuthHandler (webpack-internal:///(rsc)/./node_modules/next-auth/core/index.js:260:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async NextAuthRouteHandler (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:57:28)
+    at async NextAuth._args$ (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:89:16)
+    at async D:\New folder\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:57228
+    at async eT.execute (D:\New folder\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:46851)
+    at async eT.handle (D:\New folder\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:58760)
+    at async doRender (D:\New folder\node_modules\next\dist\server\base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (D:\New folder\node_modules\next\dist\server\base-server.js:1576:40)
+    at async DevServer.renderToResponseWithComponentsImpl (D:\New folder\node_modules\next\dist\server\base-server.js:1496:28)
+    at async DevServer.renderPageComponent (D:\New folder\node_modules\next\dist\server\base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (D:\New folder\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (D:\New folder\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\New folder\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (D:\New folder\node_modules\next\dist\server\base-server.js:818:17)
+    at async D:\New folder\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\New folder\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\New folder\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\New folder\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (D:\New folder\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (D:\New folder\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (D:\New folder\node_modules\next\dist\server\lib\start-server.js:141:13)
+(node:17388) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ POST /api/auth/callback/credentials 200 in 585ms
+ GET /api/auth/csrf 200 in 36ms
+ POST /api/auth/callback/credentials 200 in 143ms
+(node:1972) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ○ Compiling /api/chat ...
+ ✓ Compiled /api/chat in 1185ms (312 modules)
+ POST /api/chat 200 in 9822ms
+ POST /api/chat 200 in 1148ms
+ ✓ Compiled /api/conversations in 121ms (314 modules)
+ GET /api/conversations 200 in 203ms
+ ✓ Compiled /api/conversations/[id] in 130ms (316 modules)
+(node:2440) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ GET /api/conversations/b161a1e5-fce1-473d-a7bd-b5dfc07c0363 200 in 805ms
+ ✓ Compiled /api/documents in 131ms (319 modules)
+ GET /api/documents 200 in 176ms
+ ✓ Compiled /api/metrics in 118ms (321 modules)
+ GET /api/metrics 200 in 162ms
+ ○ Compiling /login ...
+ ✓ Compiled /login in 7.1s (938 modules)
+ GET /login 307 in 7433ms
+[?25h
